@@ -12,6 +12,7 @@ public class UserRegistration {
 		FirstName();
 		LastName();
 		Email();
+		ContactNumber();
 	}
 
 	public static void PatternMatcher(Pattern pattern, String string) {
@@ -43,5 +44,13 @@ public class UserRegistration {
 		String email = sc.nextLine();
 		Pattern pattern = Pattern.compile("^abc{1}([-+-.]{0,1}[a-zA-z0-9]{3})?@[a-z]{2,}\\.[a-z]{2,4}(\\.[a-z]{2})?$");
 		PatternMatcher(pattern,email);
+	}
+	
+	public static void ContactNumber()
+	{
+		System.out.println("Enter country code followed by space and 10 digit number");
+		String contactNumber = sc.nextLine();
+		Pattern pattern = Pattern.compile("^[0-9]{2}\s[1-9]{1}[0-9]{9}$");
+		PatternMatcher(pattern,contactNumber);
 	}
 }
