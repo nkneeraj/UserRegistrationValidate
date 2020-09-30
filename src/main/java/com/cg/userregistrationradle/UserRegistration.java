@@ -59,7 +59,7 @@ public class UserRegistration {
 	{
 		System.out.println("Enter Password with min length 8 and one uppercase");
 		String Password = sc.nextLine();
-		Pattern pattern = Pattern.compile("(?=.*[A-Z])([a-zA-Z0-9]){8,16}$");
+		Pattern pattern = Pattern.compile("([a-zA-Z0-9]){8,16}$");
 		PatternMatcher(pattern,Password);
 	}
 }
