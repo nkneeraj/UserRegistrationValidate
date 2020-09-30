@@ -13,6 +13,7 @@ public class UserRegistration {
 		LastName();
 		Email();
 		ContactNumber();
+		Password();
 	}
 
 	public static void PatternMatcher(Pattern pattern, String string) {
@@ -52,5 +53,13 @@ public class UserRegistration {
 		String contactNumber = sc.nextLine();
 		Pattern pattern = Pattern.compile("^[0-9]{2}\s[1-9]{1}[0-9]{9}$");
 		PatternMatcher(pattern,contactNumber);
+	}
+	
+	public static void Password()
+	{
+		System.out.println("Enter Password with min length 8");
+		String Password = sc.nextLine();
+		Pattern pattern = Pattern.compile("^[a-zA-z0-9]{8,}$");
+		PatternMatcher(pattern,Password);
 	}
 }
