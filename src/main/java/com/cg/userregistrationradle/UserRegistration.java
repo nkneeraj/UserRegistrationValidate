@@ -12,8 +12,18 @@ public class UserRegistration {
 		FirstName();
 		LastName();
 		Email();
-		ContactNumber();
-		Password();
+//		ContactNumber();
+//		Password();
+//		System.out.println("Enter 1 for email validation");
+//		int input = sc.nextInt();
+//		sc.nextLine();
+//		if(input==1)
+//		{
+//			System.out.println("Enter Email:");
+//			String email = sc.nextLine();
+//			Pattern pEmail = Pattern.compile("^abc{1}([-+-.]{0,1}[a-zA-z0-9]{3})?@[a-z]{2,}\\.[a-z]{2,4}(\\.[a-z]{2})?$");
+//			PatternMatcher(pEmail, email);
+//		}
 	}
 
 	public static void PatternMatcher(Pattern pattern, String string) {
