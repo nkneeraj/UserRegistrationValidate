@@ -11,6 +11,7 @@ public class UserRegistration {
 		System.out.println("Welcome to the User Registration portal");
 		FirstName();
 		LastName();
+		Email();
 	}
 
 	public static void PatternMatcher(Pattern pattern, String string) {
@@ -34,5 +35,13 @@ public class UserRegistration {
 		String lastName = sc.nextLine();
 		Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}$");
 		PatternMatcher(pattern,lastName);
+	}
+	
+	public static void Email()
+	{
+		System.out.println("Enter valid email having Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with precise @ and . positions");
+		String email = sc.nextLine();
+		Pattern pattern = Pattern.compile("^abc{1}([-+-.]{0,1}[a-zA-z0-9]{3})?@[a-z]{2,}\\.[a-z]{2,4}(\\.[a-z]{2})?$");
+		PatternMatcher(pattern,email);
 	}
 }
