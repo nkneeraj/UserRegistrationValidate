@@ -10,6 +10,7 @@ public class UserRegistration {
 	public static void main(String[] args) {
 		System.out.println("Welcome to the User Registration portal");
 		FirstName();
+		LastName();
 	}
 
 	public static void PatternMatcher(Pattern pattern, String string) {
@@ -25,5 +26,13 @@ public class UserRegistration {
 		String firstName = sc.nextLine();
 		Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}$");
 		PatternMatcher(pattern,firstName);
+	}
+	
+	public static void LastName()
+	{
+		System.out.println("Enter last name with first capital character and min 3 length:");
+		String lastName = sc.nextLine();
+		Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}$");
+		PatternMatcher(pattern,lastName);
 	}
 }
