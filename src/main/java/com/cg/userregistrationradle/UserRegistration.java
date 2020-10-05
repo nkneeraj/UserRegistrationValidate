@@ -49,7 +49,7 @@ public class UserRegistration {
 		return PatternMatcher(pattern,lastName);
 	}
 	
-	public static boolean Email(String email)
+	public  boolean Email(String email)
 	{
 //		System.out.println("Enter valid email having Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with precise @ and . positions");
 //		String email = sc.nextLine();
